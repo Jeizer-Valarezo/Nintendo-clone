@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  width: 100vw;
+
+  overflow-x: hidden;
+
+  /**
+    ACA IRIA EL LOADING DE LA FUENTE
+  */
+
+  font-family: "Open Sans", sans-serif;
+}
