@@ -1,0 +1,102 @@
+
+body {
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color: #484848;
+}
+.seccionJuego{
+    position: relative;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.interiorAncho{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ordenInterno{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tituloSistemas{
+        grid-column: 1 / span 2;
+        font-style: inherit;
+        font-size: 1.75rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        display: block;
+    }
+.enlacesSistemas{
+ 
+    width: 100%;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.estiloImagen{
+    width: 100%;
+    position: relative;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.imagen{
+    border-radius: 1rem;
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    text-align: center;
+}
+.texInf{
+    grid-column: 1 / span 2;
+    font-size: 1.3125rem;
+    margin: 1em 0px;
+   display:flex;
+}
+
+.pSistemas{
+    
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.enlace{
+   
+    background-color: rgb(230, 0, 18);
+    border-color: rgb(230, 0, 18);
+    color: white;
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+    position: absolute;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1rem;
+    display: flex;
+    text-decoration: none;
+
+
+}
+
