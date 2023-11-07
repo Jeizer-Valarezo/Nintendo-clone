@@ -1,0 +1,36 @@
+section{
+    
+    display: flex;
+    flex-direction: row;
+    max-width: 60%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 1rem;
+}
+div{
+    position: relative;
+    width: 20ch;
+    flex-grow: 1;
+}
+
+.newsS{
+    
+    flex-basis: 10ch;
+}
+img{
+    min-height: 1px;
+    width: 100%;
+    border-radius: 5%;
+}
+.fecha{
+    border-style: none;
+}
+a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    color: red;
+}
+
+
