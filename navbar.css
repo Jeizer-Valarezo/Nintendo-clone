@@ -1,0 +1,88 @@
+*{
+    margin:0;
+}
+
+.navbar{
+    display:flex; 
+    justify-content:space-between; 
+    height: 40px;
+    flex-wrap: wrap;
+    /* width: fit-content; */
+    }
+
+.busqueda{
+    padding: 10px;
+    margin-right:100px;
+    border-style: none;
+    display: inline;
+}    
+
+ .busqueda a{
+    display: inline;
+} 
+
+.busqueda select{
+      border-style: none;
+      color:rgb(80, 77, 77);
+}
+
+.caja{
+    border-style: none;
+    opacity:0.5;
+}
+
+.navbar a{
+    color:rgb(80, 77, 77);
+    text-decoration: none;
+}
+
+.logo{
+    background-color: red;
+    margin:0;
+    color:white;
+    padding: 25px;
+    height:8px;
+}
+
+.store{
+    border-style: none;
+    color:rgb(80, 77, 77);
+}
+
+.games{
+    border-style: none;
+    color:rgb(80, 77, 77);
+}
+
+.switch{
+    border-style: none;
+    color:rgb(80, 77, 77);
+}
+
+.nintendo{
+    border-style: none;
+    color:rgb(80, 77, 77);
+}
+
+.segunda{
+    text-align: center; 
+}
+
+.segunda a{
+    text-decoration: none;
+    color:rgb(80, 77, 77);
+}
+
+.links{
+    display: inline;
+    float: right;
+    padding-left: 300px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+    margin-top: 5px;
+}
+
+.links a{
+    padding: 5px;
+}
