@@ -6,14 +6,17 @@ section{
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 1rem;
+    
 }
 div{
+    
     position: relative;
     width: 20ch;
     flex-grow: 1;
 }
 
 .newsS{
+    
     
     flex-basis: 10ch;
 }
@@ -31,6 +34,41 @@ a{
     left: 0;
     z-index: -1;
     color: red;
+}
+.S1{
+    
+    grid-area: S1;
+}
+.S2{
+    grid-area: S2;
+}
+.S3{
+    grid-area: S3;
+}
+.S4{
+    grid-area: S4;
+}
+@media(max-width:900px){
+ .Secundarias{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:    "S1 S2"
+                            "S3 S4";
+ }
+}
+@media(max-width:550px){
+    .Secundarias{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:    "S1"
+                                "S2"
+                                "S3"
+                                "S4";   
+        
+    }
+    
 }
 
 
