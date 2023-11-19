@@ -12,6 +12,7 @@ body {
 }
 /*SECCION CHARACTERS */
 
+
 .characters{
   width: 60%;
   margin:auto;
@@ -29,6 +30,7 @@ line-height: 1.4;
   grid-gap: 20px;
   }
 
+
   .fondo {
   transition-duration:0.5s;
   border-radius: 0.75rem;
@@ -37,11 +39,13 @@ line-height: 1.4;
   overflow: clip;
   width: 100%;
   box-sizing: border-box;
+  background-size:50px 50px;
 
 
     }
   .fondo:hover{
-  background-size: 120%;
+  background-size: cover;
+  transition-duration: 0.5s;
   }
 
   .mainImg {
@@ -53,7 +57,7 @@ line-height: 1.4;
   transition-duration:0.5s
   }
   .mainImg:hover{
-  transform: scale(1.10,1.10);
+  transform: scale(1.1,1.1);
   }
   .fondo1{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg");}
 
@@ -71,4 +75,22 @@ line-height: 1.4;
 
   .fondo8{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Background-Pokemon_v01");}
 
+  @media screen and (max-width:760px) {
+    .container{
+      display:grid;/*display indica como se va a mostrar el contenido */
+      grid-template-columns:1fr 1fr;
+      grid-gap: 20px;
+      }
+  
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      section{
+        width: 85%!important;
+      }
+   
+      
+  }
   /*FINAL SECCION CHARACTERS*/
