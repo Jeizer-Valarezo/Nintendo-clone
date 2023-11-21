@@ -30,6 +30,7 @@ main{
 div{
     position: relative;
 }
+ 
 
 img{
     min-height: 1px;
@@ -46,6 +47,7 @@ img{
     z-index: -1;
     color: red;
 }
+
 .P1{
     grid-area: P1;
 }
@@ -65,11 +67,21 @@ img{
     grid-area: P6;
 }
 .P1:hover,.P2:hover,.P3:hover,.P4:hover,.P5:hover,.P6:hover{
-    cursor:pointer;  
+    cursor:pointer; 
+    transition: 0.5s; 
+    
 }
-h2:hover{
+.P1:hover h2,.P2:hover h2,.P3:hover h2,.P4:hover h2,.P5:hover h2,.P6:hover h2{
     color: red;
+    transition: 0.5s;
+    
 }
+.P1:hover .imgS,.P2:hover .imgS,.P3:hover .imgS,.P4:hover .imgS,.P5:hover .imgS,.P6:hover .imgS{
+    transition: 0.5s;
+    filter: brightness(0.5);
+    
+}
+
 
 .enlace{
     background-color: red;
