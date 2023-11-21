@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+  }
+  
+  :root {
+    --color: rgb(87, 84, 84);
+  }
+  
+  .logo-search {
+    display: flex;
+    align-items: center;
+  }
+  header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    width: 100px;
+    height: 50px;
+  }
+
+  .logo a{
+    color:white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo:hover{
+    cursor: pointer;
+  }
+  .busqueda {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .busqueda:hover{
+    border-color:red;
+    cursor: pointer;
+  }
+
+  .dropdown:hover{
+    color:red;
+    cursor: pointer;
+    border-color: red;
+  }
+  
+  .links {
+    display: flex;
+    padding: 10px;
+    justify-self: flex-end;
+    align-items: center;
+  }
+  
+  .links a {
+    color: var(--color);
+    text-decoration: none;
+    padding: 10px;
+
+  }
+
+  .links a:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .links svg{
+    margin-right: 7px;
+  }
+
+  .navbar{
+   
+  }
+  
+  .cajas {
+    display: flex;
+    align-items: flex-start;
+    border-style: none;
+    border-bottom-style: solid;
+    /* height:fit-content; */
+    border-color: var(--color);
+    margin-left: 10px;
+    /* margin-right: 450px; */
+  }
+
+  .cajas:hover{
+    border-color:red;
+    cursor: pointer;
+  }
+  
+  .caja {
+    border-style: none;
+  }
+  
+  .dropdown {
+    border-style: none;
+    color: var(--color);
+  }
+
+  .dropdown option{
+    color: var(--color);
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px black solid;
+    height: 50px;
+  }
+  
+  .arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4px;
+  }
+  .segunda form{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center; 
+    justify-content: center; 
+    color: var(--color);
+    padding: 4px;
+  }
+  
+  .segunda a {
+    text-decoration: none;
+    color: var(--color);
+    padding: 4px;
+  }
+  
+  .segunda a:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .segunda select {
+    border-style: none;
+    margin-right: 5px;
+    color: var(--color);
+  }
+
+  .segunda select:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .store:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .games:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .switch:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .news:hover{
+    color:red;
+    cursor: pointer;
+  }
+
+  .nintendo:hover{
+    color:red;
+    cursor: pointer;
+  }
