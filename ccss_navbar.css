@@ -75,10 +75,6 @@
   .links svg{
     margin-right: 7px;
   }
-
-  .navbar{
-   
-  }
   
   .cajas {
     display: flex;
@@ -157,27 +153,71 @@
     cursor: pointer;
   }
 
-  .store:hover{
+  .store:hover, .store:hover select{
     color:red;
     cursor: pointer;
   }
 
-  .games:hover{
+  .games:hover, .games:hover select{
     color:red;
     cursor: pointer;
   }
 
-  .switch:hover{
+  .switch:hover, switch:hover select{
     color:red;
     cursor: pointer;
   }
 
-  .news:hover{
+  .news:hover, .news:hover select{
     color:red;
     cursor: pointer;
   }
 
-  .nintendo:hover{
+  .nintendo:hover, .nintendo:hover select{
     color:red;
     cursor: pointer;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  @media(max-width: 576px) {
+    header{
+     display:none;
+     }
+    .mobile{
+      /* position: fixed; */
+      border-radius: 50px;
+      margin:4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+      -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75);
+      /* width: 80%; */
+      
+    } 
+    .mobile:hover{
+      cursor: pointer;
+    }
+    .mobile div{
+      padding:20px;
+      }
+
+    
+    .mobile div a{
+      color:var(--color)
+    }
+    .like :hover, .burger :hover, .carro :hover, .login :hover{
+      color:red;
+    }
+    .search{
+      display: flex;
+      margin-bottom: 10px;
+      background-color: red;
+      border-radius: 50px;
+      color:white;
+    }
   }
