@@ -40,11 +40,16 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   .busqueda:hover{
     border-color:red;
     cursor: pointer;
+  }
+
+  .busqueda svg:hover{
+    color: red;
   }
 
   .dropdown:hover{
@@ -58,6 +63,7 @@
     padding: 10px;
     justify-self: flex-end;
     align-items: center;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   .links a {
@@ -99,6 +105,7 @@
   .dropdown {
     border-style: none;
     color: var(--color);
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   .dropdown option{
@@ -133,12 +140,14 @@
     justify-content: center; 
     color: var(--color);
     padding: 4px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   .segunda a {
     text-decoration: none;
     color: var(--color);
     padding: 4px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   }
   
   .segunda a:hover{
@@ -150,6 +159,7 @@
     border-style: none;
     margin-right: 5px;
     color: var(--color);
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   .segunda select:hover{
@@ -182,8 +192,11 @@
     cursor: pointer;
   }
 
+  /* Aquí la parte responsive */
+
   .mobile{
     display: none;
+    z-index: 1;
   }
 
   .top{
@@ -213,6 +226,7 @@
     }
     .mobile{
       position: fixed;
+      left:30%;
       bottom: 0;
       margin-bottom: 20px;
       height: 58px;
@@ -244,10 +258,87 @@
       display: flex;
       margin-bottom: 0px;
       background-color: red;
-      border-radius: 50px;
+      border-radius: 100px;
       color:white;
+      position: relative;
+      bottom: 15px;
     }
     .search svg{
       color: white;
     }
+  }
+
+  /* Aquí empiezo el banner */
+
+  .fondo img{
+    width: 100%;
+    height:460px;
+  }
+
+  .frente{
+    position:relative;
+    display: flex;
+    bottom: 450px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frente p{
+    display: flex;
+    float: left;
+    justify-content: flex-start;
+  }
+
+  .frente img{
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+
+  .piedefoto h1{
+    color: rgb(72, 72, 72);
+    font-size:26.5px;
+    font-weight:700;
+    margin-left: 41px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    height: min-content;
+    margin-right: 20px;
+  }
+
+  .piedefoto h1:hover{
+    cursor: default;
+  }
+
+  .boton{
+    position: relative;
+    bottom: 8px;
+    background-color: rgb(230, 0, 18);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 47px;
+    margin-left: 10px;
+  }
+
+  .boton:hover{
+    cursor: pointer;
+  }
+
+  .piedefoto{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -407px;
+  }
+
+  .piedefoto img{
+    width: 103px;
+    margin-left: 572px;
+    position: relative;
+    bottom: 19px;
   }
