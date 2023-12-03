@@ -4,6 +4,7 @@
   
   :root {
     --color: rgb(87, 84, 84);
+    --rojo: rgb(230, 0, 18);
   }
   
   .logo-search {
@@ -21,7 +22,7 @@
   .logo {
     display: flex;
     justify-content: center;
-    background-color: red;
+    background-color: var(--rojo);
     color: white;
     width: 100px;
     height: 50px;
@@ -36,82 +37,38 @@
   .logo:hover{
     cursor: pointer;
   }
-  .busqueda {
+  .busqueda{
     display: flex;
     justify-content: space-between;
     padding: 10px;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
   }
 
   .busqueda:hover{
-    border-color:red;
+    border-color:var(--rojo);
     cursor: pointer;
   }
 
-  .busqueda svg:hover{
-    color: red;
-  }
-
-  .dropdown:hover{
-    color:red;
-    cursor: pointer;
-    border-color: red;
-  }
-  
-  .links {
-    display: flex;
-    padding: 10px;
-    justify-self: flex-end;
-    align-items: center;
+  .busqueda select{
+    margin-left: 130px;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
   }
-  
-  .links a {
-    color: var(--color);
-    text-decoration: none;
-    padding: 10px;
-
+  .busqueda svg:hover{
+    color: var(--rojo);
   }
 
-  .links a:hover{
-    color:red;
-    cursor: pointer;
-  }
-
-  .links svg{
-    margin-right: 7px;
-  }
-  
-  .cajas {
-    display: flex;
-    align-items: flex-start;
-    border-style: none;
-    border-bottom-style: solid;
-    /* height:fit-content; */
-    border-color: var(--color);
-    margin-left: 10px;
-    /* margin-right: 450px; */
-  }
-
-  .cajas:hover{
-    border-color:red;
-    cursor: pointer;
-  }
-  
   .caja {
     border-style: none;
   }
-  
-  .dropdown {
-    border-style: none;
-    color: var(--color);
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  .dropdown:hover{
+    color:var(--rojo);
+    cursor: pointer;
+    border-color: var(--rojo);
   }
 
-  .dropdown option{
-    color: var(--color);
-  }
-  
   .navbar {
     display: flex;
     flex-direction: row;
@@ -127,7 +84,73 @@
     justify-content: space-between;
     padding-top: 4px;
   }
+  
 
+  /* Links de la derecha */
+
+
+  .links {
+    display: flex;
+    padding: 10px;
+    justify-self: flex-end;
+    align-items: center;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .links a {
+    display: flex;
+    color: var(--color);
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-top: -8px;
+  }
+
+  .links a:hover{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .links svg{
+    margin-right: 7px;
+  }
+
+  .links img{
+    border-radius: 4px;
+    position: relative;
+    bottom: 3px;
+  }
+
+  
+  /* Barra de Navegación inferior */
+  
+  .cajas {
+    display: flex;
+    align-items: flex-start;
+    border-style: none;
+    border-bottom-style: solid;
+    border-color: var(--color);
+    margin-left: 10px;
+  }
+
+  .cajas:hover{
+    border-color:var(--rojo);
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    border-style: none;
+    color: var(--color);
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .dropdown option{
+    color: var(--color);
+  }
+  
   .segunda div{
     margin:10px
   }
@@ -141,6 +164,7 @@
     color: var(--color);
     padding: 4px;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
   }
   
   .segunda a {
@@ -148,10 +172,11 @@
     color: var(--color);
     padding: 4px;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
   }
   
   .segunda a:hover{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
@@ -160,35 +185,36 @@
     margin-right: 5px;
     color: var(--color);
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
   }
 
   .segunda select:hover{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
   .store:hover, .store:hover select{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
   .games:hover, .games:hover select{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
   .switch:hover, switch:hover select{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
   .news:hover, .news:hover select{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
   .nintendo:hover, .nintendo:hover select{
-    color:red;
+    color:var(--rojo);
     cursor: pointer;
   }
 
@@ -212,7 +238,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: red;
+      background-color:var(--rojo);
       height:46px;
       padding-left: 8px;
      }
@@ -220,9 +246,11 @@
     .top svg{
       color: white;
       display: flex;
+      margin-left: 9px;
     } 
     .topflag{
-      margin-right: 6px;
+      margin-right: 10px;
+      border-color: white;
     }
     .mobile{
       position: fixed;
@@ -252,12 +280,12 @@
       color:var(--color)
     }
     .like :hover, .burger :hover, .carro :hover, .login :hover{
-      color:red;
+      color:var(--rojo);
     }
     .search{
       display: flex;
       margin-bottom: 0px;
-      background-color: red;
+      background-color: var(--rojo);
       border-radius: 100px;
       color:white;
       position: relative;
@@ -265,55 +293,56 @@
     }
     .search svg{
       color: white;
-    }
+    }  
   }
 
   /* Aquí empiezo el banner */
 
-  .fondo img{
-    width: 100%;
-    height:460px;
+  .containerPreview{
+    position: relative;
   }
 
-  .frente{
-    position:relative;
+  .containerBackground{
+    background-image: url(background.jpg);
+    position: absolute;
+    height: 460px;
+    width: 100%;
+   }
+
+  .containerImage{
+    position:relative; 
     display: flex;
-    bottom: 450px;
     flex-wrap: wrap;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
-  }
-
-  .frente p{
-    display: flex;
-    float: left;
-    justify-content: flex-start;
-  }
-
-  .frente img{
-    margin-top: 15px;
     border-radius: 15px;
+    /* overflow: hidden; */
   }
 
-  .piedefoto h1{
+  .containerImage img{
+    border-radius: 15px;
+    position: relative;
+    top: 30px;
+  }
+
+  .piedefoto p{
+    margin-top: 75px;
     color: rgb(72, 72, 72);
     font-size:26.5px;
     font-weight:700;
     margin-left: 41px;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     height: min-content;
-    margin-right: 20px;
+    margin-right: 20px;  
   }
 
-  .piedefoto h1:hover{
+  .piedefoto p:hover{
     cursor: default;
   }
 
   .boton{
     position: relative;
-    bottom: 8px;
-    background-color: rgb(230, 0, 18);
+    background-color: var(--rojo);
     color: white;
     border: none;
     border-radius: 12px;
@@ -323,22 +352,48 @@
     font-size: 18px;
     font-weight: 700;
     height: 47px;
-    margin-left: 10px;
+    margin-left: 639px;
+    bottom: 37px;
   }
 
   .boton:hover{
     cursor: pointer;
   }
 
-  .piedefoto{
+  .piedefoto img{
     display: flex;
-    justify-content: flex-start;
-    margin-top: -407px;
+    float: inline-end;
+    width: 103px;
+    position: relative;
+    bottom: 49px;
+    margin-right: 39px;
   }
 
-  .piedefoto img{
-    width: 103px;
-    margin-left: 572px;
-    position: relative;
-    bottom: 19px;
+  @media(max-width: 900px) {
+    *{
+    }
+    .containerImage img{
+      position:relative;
+      top: 0;
+    }
+
+    .containerBackground{
+      position: absolute;
+      margin-top:200px;
+    }
+
+    .piedefoto{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .piedefoto p{
+      margin-top: 40px;
+    }
+
+    .boton{
+      position: relative;
+    }
   }
