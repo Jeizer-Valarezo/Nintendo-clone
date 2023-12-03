@@ -1,0 +1,99 @@
+.footer{
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+.brandbar{
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    background-color: red;
+    color: white;
+    padding: 2.25rem 1rem;
+    place-items: center;
+}
+.linkbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:  "about shop store support parents community"
+                          "about shop store support privacy ..."
+                          "... ... ... ... ... terms";
+    padding: 20px;
+  }
+
+.copyright{
+  background-color: black;
+  color: white;
+  display: flex;
+  place-items: center;
+}
+
+  .footer__logo {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo:hover{
+    cursor: pointer;
+  }
+
+  .footer__links {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .footer__links__category {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-style: none;
+  }
+  .footer__links__category:hover{
+    cursor: pointer;
+    text-decoration: underline brown;
+  }
+.about{
+  grid-area: about;
+}
+.shop{
+  grid-area: shop;
+}
+.store{
+  grid-area: store;
+}
+.support{
+  grid-area: support;
+}
+.parents{
+  grid-area: parents;
+}
+.privacy{
+  grid-area: privacy;
+}
+.community{
+  grid-area: community;
+}
+.terms{
+  display: flex;
+  justify-content: end;
+  grid-area: terms;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline brown;
+}
+.linkbar a{
+  color: red;
+}
+.linkbar a:hover{
+  color: brown;
+  text-decoration: underline brown;
+}
+.copyright a{
+  color: white;
+}
+
