@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "museo-sans-700";
-  src: url(museo-sans/MuseoSans_700.ttf);
-}
-
 .titulo{
     font-size: 1.75rem;  
     font-weight: 700;
