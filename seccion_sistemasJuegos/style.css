@@ -1,10 +1,26 @@
-
 body {
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     color: #484848;
 }
+
+.seccionJuego1{
+  -webkit-box-align: center;
+    align-items: center;
+}
+
+@media(min-width:1025px){
+    .seccionJuego1{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        justify-items: start;
+    
+    }
+}
+
+
 .seccionJuego{
     position: relative;
     width: 100%;
@@ -15,6 +31,14 @@ body {
     width: 96%;
     margin-left: auto;
     margin-right: auto;
+}
+@media(min-width:1025px){
+    .interiorAncho{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem;
+        justify-items: start;
+    }
 }
 
 .ordenInterno{
@@ -32,30 +56,55 @@ body {
         margin-inline-end: 0px;
         display: block;
     }
+    @media(min-width:1025px){
+        .tituloSistemas{
+            grid-column: 1/span2;
+        }
+    }
+    @media(min-width:429px){
+        .tituloSistemas{
+            font-size: 1.75rem;
+        }
+    }
+
 .enlacesSistemas{
- 
+    border-color: 2px solid blue;
     width: 100%;
-    overflow: hidden;
+    border-radius: 1rem;
+    width: 100%;
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+    overflow: hidden;
 }
-.estiloImagen{
-    width: 100%;
-    position: relative;
+
+
+@media (min-width: 1025px){
+    .enlacesSistemas {
+        grid-column: 1 / span 2;
+    }
 }
+
+
 *, ::before, ::after {
     box-sizing: border-box;
 }
+
 .imagen{
     border-radius: 1rem;
     display: block;
     min-height: 1px;
     width: 100%;
-    overflow-clip-margin: content-box;
     overflow: clip;
     text-align: center;
+    
+    
 }
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
 .texInf{
     grid-column: 1 / span 2;
     font-size: 1.3125rem;
@@ -99,4 +148,3 @@ body {
 
 
 }
-
