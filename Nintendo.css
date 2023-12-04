@@ -471,13 +471,14 @@ body {
     font-family: "Open Sans", sans-serif;
 
      /* Gaming Systems */
-
+}
      
 body {
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.4;
     -webkit-font-smoothing: antialiased;
     color: #484848;
+    
 }
 .seccionJuego{
     position: relative;
@@ -576,148 +577,148 @@ body {
 
 
     /* news */
-
     main{
-        max-width: 60%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 70px 1fr 70px;
-        grid-template-areas:    "titulo"
-                                "contenedor"
-                                "boton";
-    }
-    .titulo{
-        grid-area: titulo;
-    }
-    
-    .contenedor{
-        grid-area: contenedor;
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:    "P1 P1 P2 P2"
-                                "P3 P4 P5 P6";
-        
-        gap: 1rem;
-        
-    }
-    .boton{
-        padding-top: 10px;
-        grid-area: boton;
-    }
-    div{
-        position: relative;
-    }
-     
-    
-    img{
-        min-height: 1px;
-        width: 100%;
-        border-radius: 5%;
-    }
-    .fecha{
-        border-style: none;
-    }
-    .readMore{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        color: red;
-    }
-    
-    .P1{
-        grid-area: P1;
-    }
-    .P2{
-        grid-area: P2;
-    }
-    .P3{
-        grid-area: P3;
-    }
-    .P4{
-        grid-area: P4;
-    }
-    .P5{
-        grid-area: P5;
-    }
-    .P6{
-        grid-area: P6;
-    }
-    .P1:hover,.P2:hover,.P3:hover,.P4:hover,.P5:hover,.P6:hover{
-        cursor:pointer; 
-        transition: 0.5s; 
-        
-    }
-    .P1:hover h2,.P2:hover h2,.P3:hover h2,.P4:hover h2,.P5:hover h2,.P6:hover h2{
-        color: red;
-        transition: 0.5s;
-        
-    }
-    .P1:hover .imgS,.P2:hover .imgS,.P3:hover .imgS,.P4:hover .imgS,.P5:hover .imgS,.P6:hover .imgS{
-        transition: 0.5s;
-        filter: brightness(0.5);
-        
-    }
-    
-    
-    .enlace{
-        background-color: red;
-        border-color: rgb(230, 0, 18);
-        max-width: 15rem;
-        height: 3rem;
-        width: auto;
-        border-radius: 1rem;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        cursor: pointer;
-    
-    }
-    .enlaceEstilos{
-        color: white;
-        font-size: 1.125rem;
-        padding: 0px 1.5rem;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    
-    .icon{
-        width: 20px;
-    }
-    @media(max-width:900px){
-        .contenedor{
-            display: grid;
-            grid-template-rows: repeat(4, 1fr);
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:    "P1 P1"
-                                    "P2 P2"
-                                    "P3 P4"
-                                    "P5 P6";
-        }
-    }
-    @media(max-width:550px){
-        main{
-            max-width: 100%;
-        }
-        .contenedor{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
-            grid-template-areas:    "P1"
-                                    "P2"
-                                    "P3"
-                                    "P4"
-                                    "P5"
-                                    "P6";   
-            
-        }
-        
-    }
-    
-    
+      max-width: 60%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 70px 1fr 70px;
+      grid-template-areas:    "titulo"
+                              "contenedorNews"
+                              "boton";
   }
+  main .titulo{
+      grid-area: titulo;
+  }
+  
+  main .contenedorNews{
+      grid-area: contenedorNews;
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:    "P1 P1 P2 P2"
+                              "P3 P4 P5 P6";
+      
+      gap: 1rem;
+      
+  }
+  main .boton{
+      padding-top: 10px;
+      grid-area: boton;
+  }
+  main div{
+      position: relative;
+  }
+   
+  
+  main img{
+      min-height: 1px;
+      width: 100%;
+      border-radius: 5%;
+  }
+  main .fecha{
+      border-style: none;
+  }
+  main .readMore{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      color: red;
+      
+  }
+  
+  .P1{
+      grid-area: P1;
+  }
+  .P2{
+      grid-area: P2;
+  }
+  .P3{
+      grid-area: P3;
+  }
+  .P4{
+      grid-area: P4;
+  }
+  .P5{
+      grid-area: P5;
+  }
+  .P6{
+      grid-area: P6;
+  }
+  .P1:hover,.P2:hover,.P3:hover,.P4:hover,.P5:hover,.P6:hover{
+      cursor:pointer; 
+      transition: 0.5s; 
+      
+  }
+  .P1:hover h2,.P2:hover h2,.P3:hover h2,.P4:hover h2,.P5:hover h2,.P6:hover h2{
+      color: red;
+      transition: 0.5s;
+      
+  }
+  .P1:hover .imgS,.P2:hover .imgS,.P3:hover .imgS,.P4:hover .imgS,.P5:hover .imgS,.P6:hover .imgS{
+      transition: 0.5s;
+      filter: brightness(0.5);
+      
+  }
+  
+  
+  main .enlace{
+      background-color: red;
+      border-color: rgb(230, 0, 18);
+      max-width: 15rem;
+      height: 3rem;
+      width: auto;
+      border-radius: 1rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+  
+  }
+  main .enlaceEstilos{
+      color: white;
+      font-size: 1.125rem;
+      padding: 0px 1.5rem;
+      font-weight: 700;
+      text-decoration: none;
+  }
+  
+  main .icon{
+      width: 20px;
+  }
+  @media(max-width:900px){
+      main .contenedorNews{
+          display: grid;
+          grid-template-rows: repeat(4, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-areas:    "P1 P1"
+                                  "P2 P2"
+                                  "P3 P4"
+                                  "P5 P6";
+      }
+  }
+  @media(max-width:550px){
+      main{
+          max-width: 100%;
+      }
+      main .contenedorNews{
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6, 1fr);
+          grid-template-areas:    "P1"
+                                  "P2"
+                                  "P3"
+                                  "P4"
+                                  "P5"
+                                  "P6";   
+          
+      }
+      
+  }
+    
+    
+  
   /*SECCION CHARACTERS */
   
   
