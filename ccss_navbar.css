@@ -2,8 +2,11 @@
     margin: 0;
   }
   
+  /* .banner{
+    overflow-x: hidden;
+  } */
   :root {
-    --color: rgb(87, 84, 84);
+    --color: rgb(72, 72, 72);
     --rojo: rgb(230, 0, 18);
   }
   
@@ -74,7 +77,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(218, 218, 218) solid;
     height: 50px;
   }
   
@@ -131,7 +134,7 @@
     display: flex;
     align-items: flex-start;
     border-style: none;
-    border-bottom-style: solid;
+    border-bottom: 0.5px solid var(--color);
     border-color: var(--color);
     margin-left: 10px;
   }
@@ -229,7 +232,7 @@
     display: none;
   }
 
-  @media(max-width: 900px) {
+  @media(max-width: 1025px) {
     header{
      display:none;
      }
@@ -254,7 +257,7 @@
     }
     .mobile{
       position: fixed;
-      left:30%;
+      left:10%;
       bottom: 0;
       margin-bottom: 20px;
       height: 58px;
@@ -266,6 +269,8 @@
       background-color: rgb(255, 255, 255);
       border-radius: 100px;
       box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+      -webkit-box-align:center;
+      width: 400px;
     }
     
     .mobile:hover{
@@ -284,12 +289,16 @@
     }
     .search{
       display: flex;
+      align-items: center;
+      justify-content: center;
       margin-bottom: 0px;
       background-color: var(--rojo);
       border-radius: 100px;
       color:white;
       position: relative;
-      bottom: 15px;
+      bottom: 10px;
+      width:18px;
+      height: 18px;
     }
     .search svg{
       color: white;
@@ -297,6 +306,10 @@
   }
 
   /* Aquí empiezo el banner */
+
+  .image_resp{
+    display: none;
+  }
 
   .containerPreview{
     position: relative;
@@ -316,7 +329,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    /* overflow: hidden; */
   }
 
   .containerImage img{
@@ -325,7 +337,13 @@
     top: 30px;
   }
 
-  .piedefoto p{
+  .piedefoto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .titulo{
     margin-top: 75px;
     color: rgb(72, 72, 72);
     font-size:26.5px;
@@ -336,12 +354,16 @@
     margin-right: 20px;  
   }
 
-  .piedefoto p:hover{
+  .titulo:hover{
     cursor: default;
   }
 
-  .boton{
+  .deals{
     position: relative;
+    top: 10px;
+  }
+
+  .boton {
     background-color: var(--rojo);
     color: white;
     border: none;
@@ -352,48 +374,81 @@
     font-size: 18px;
     font-weight: 700;
     height: 47px;
-    margin-left: 639px;
-    bottom: 37px;
   }
 
   .boton:hover{
     cursor: pointer;
   }
 
-  .piedefoto img{
-    display: flex;
-    float: inline-end;
-    width: 103px;
-    position: relative;
-    bottom: 49px;
-    margin-right: 39px;
+  .rating{
+    position: absolute;
+    right: 0%;
   }
 
-  @media(max-width: 900px) {
-    *{
+  .rating img{
+    width: 103px;
+    bottom: 49px;
+    margin-right: 39px;
+    position: relative;
+    top:23px;
+  }
+
+  /* Parte responsive del banner */
+
+  @media(max-width: 1025px) {
+
+    .image_resp{
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      /* height: auto; 
+      width: 100%; */
+    }
+
+    .image_resp img{
+      width: 100%;
+      margin-right: 0%;
+    }
+
+    .containerPreview{
+      position: relative;
     }
     .containerImage img{
-      position:relative;
-      top: 0;
+      display: none;
     }
 
     .containerBackground{
       position: absolute;
       margin-top:200px;
+      /* max-width: 100%; */
     }
 
     .piedefoto{
-      position: absolute;
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-end;
     }
 
-    .piedefoto p{
+    .rating{
+      display: none;
+    }
+
+    .titulo{
       margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
     .boton{
       position: relative;
+      width:520px;
+      top: 7px;
+      border-radius: 0.5rem;
     }
   }
