@@ -9,7 +9,7 @@
     gap: 2rem;
     background-color: red;
     color: white;
-    padding: 2.25rem 1rem;
+    padding: 2rem 1rem;
     place-items: center;
 }
 .linkbar {
@@ -97,3 +97,32 @@ a:hover{
   color: white;
 }
 
+@media (max-width:900px){
+  .linkbar{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:  "about shop store support"
+                          "about shop store support"
+                          "parents community privacy ..."
+                          "... ... ... terms";  
+  }
+  .brandbar{
+    max-height: 180px;
+  }
+}
+@media(max-width:550px){
+  .linkbar{
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:  "about"
+                          "shop"
+                          "store"
+                          "support"
+                          "parents"
+                          "community"
+                          "privacy"
+                          "terms";
+    align-items: center;
+    
+  }
+}
