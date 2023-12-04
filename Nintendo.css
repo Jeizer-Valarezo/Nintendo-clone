@@ -1,0 +1,1111 @@
+
+/* Navbar */
+
+* {
+    margin: 0;
+  }
+  
+  /* .banner{
+    overflow-x: hidden;
+  } */
+  :root {
+    --color: rgb(72, 72, 72);
+    --rojo: rgb(230, 0, 18);
+  }
+  
+  .logo-search {
+    display: flex;
+    align-items: center;
+  }
+  header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    background-color: var(--rojo);
+    color: white;
+    width: 100px;
+    height: 50px;
+  }
+
+  .logo a{
+    color:white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo:hover{
+    cursor: pointer;
+  }
+  .busqueda{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+  }
+
+  .busqueda:hover{
+    border-color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .busqueda select{
+    margin-left: 130px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+  }
+  .busqueda svg:hover{
+    color: var(--rojo);
+  }
+
+  .caja {
+    border-style: none;
+  }
+
+  .dropdown:hover{
+    color:var(--rojo);
+    cursor: pointer;
+    border-color: var(--rojo);
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px rgb(218, 218, 218) solid;
+    height: 50px;
+  }
+  
+  .arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 4px;
+  }
+  
+
+  /* Links de la derecha */
+
+
+  .links {
+    display: flex;
+    padding: 10px;
+    justify-self: flex-end;
+    align-items: center;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .links a {
+    display: flex;
+    color: var(--color);
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-top: -8px;
+  }
+
+  .links a:hover{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .links svg{
+    margin-right: 7px;
+  }
+
+  .links img{
+    border-radius: 4px;
+    position: relative;
+    bottom: 3px;
+  }
+
+  
+  /* Barra de Navegación inferior */
+  
+  .cajas {
+    display: flex;
+    align-items: flex-start;
+    border-style: none;
+    border-bottom: 0.5px solid var(--color);
+    border-color: var(--color);
+    margin-left: 10px;
+  }
+
+  .cajas:hover{
+    border-color:var(--rojo);
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    border-style: none;
+    color: var(--color);
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .dropdown option{
+    color: var(--color);
+  }
+  
+  .segunda div{
+    margin:10px
+  }
+
+  .segunda form{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; 
+    color: var(--color);
+    padding: 4px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+  }
+  
+  .segunda a {
+    text-decoration: none;
+    color: var(--color);
+    padding: 4px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+  }
+  
+  .segunda a:hover{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .segunda select {
+    border-style: none;
+    margin-right: 5px;
+    color: var(--color);
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+  }
+
+  .segunda select:hover{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .store:hover, .store:hover select{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .games:hover, .games:hover select{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .switch:hover, switch:hover select{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .news:hover, .news:hover select{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  .nintendo:hover, .nintendo:hover select{
+    color:var(--rojo);
+    cursor: pointer;
+  }
+
+  /* Aquí la parte responsive */
+
+  .mobile{
+    display: none;
+    z-index: 1;
+  }
+
+  .top{
+    display: none;
+  }
+
+  @media(max-width: 1025px) {
+    header{
+     display:none;
+     }
+    
+     .top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:var(--rojo);
+      height:46px;
+      padding-left: 8px;
+     }
+
+    .top svg{
+      color: white;
+      display: flex;
+      margin-left: 9px;
+    } 
+    .topflag{
+      margin-right: 10px;
+      border-color: white;
+    }
+    .mobile{
+      position: fixed;
+      left:10%;
+      bottom: 0;
+      margin-bottom: 20px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: rgb(255, 255, 255);
+      border-radius: 100px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+      -webkit-box-align:center;
+      width: 400px;
+    }
+    
+    .mobile:hover{
+      cursor: pointer;
+    }
+    .mobile div{
+      padding:20px;
+      }
+
+    
+    .mobile div a{
+      color:var(--color)
+    }
+    .like :hover, .burger :hover, .carro :hover, .login :hover{
+      color:var(--rojo);
+    }
+    .search{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0px;
+      background-color: var(--rojo);
+      border-radius: 100px;
+      color:white;
+      position: relative;
+      bottom: 10px;
+      width:18px;
+      height: 18px;
+    }
+    .search svg{
+      color: white;
+    }  
+  }
+
+  /* Aquí empiezo el banner */
+
+  .image_resp{
+    display: none;
+  }
+
+  .containerPreview{
+    position: relative;
+  }
+
+  .containerBackground{
+    background-image: url(background.jpg);
+    position: absolute;
+    height: 460px;
+    width: 100%;
+   }
+
+  .containerImage{
+    position:relative; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .containerImage img{
+    border-radius: 15px;
+    position: relative;
+    top: 30px;
+  }
+
+  .piedefoto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .titulo{
+    margin-top: 75px;
+    color: rgb(72, 72, 72);
+    font-size:26.5px;
+    font-weight:700;
+    margin-left: 41px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    height: min-content;
+    margin-right: 20px;  
+  }
+
+  .titulo:hover{
+    cursor: default;
+  }
+
+  .deals{
+    position: relative;
+    top: 10px;
+  }
+
+  .boton {
+    background-color: var(--rojo);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 47px;
+  }
+
+  .boton:hover{
+    cursor: pointer;
+  }
+
+  .rating{
+    position: absolute;
+    right: 0%;
+  }
+
+  .rating img{
+    width: 103px;
+    bottom: 49px;
+    margin-right: 39px;
+    position: relative;
+    top:23px;
+  }
+
+  /* Parte responsive del banner */
+
+  @media(max-width: 1025px) {
+
+    .image_resp{
+      max-width: 100%;
+      position: relative;
+      display: flex;
+      /* height: auto; 
+      width: 100%; */
+    }
+
+    .image_resp img{
+      width: 100%;
+      margin-right: 0%;
+    }
+
+    .containerPreview{
+      position: relative;
+    }
+    .containerImage img{
+      display: none;
+    }
+
+    .containerBackground{
+      position: absolute;
+      margin-top:200px;
+      /* max-width: 100%; */
+    }
+
+    .piedefoto{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .rating{
+      display: none;
+    }
+
+    .titulo{
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .boton{
+      position: relative;
+      width:520px;
+      top: 7px;
+      border-radius: 0.5rem;
+    }
+  }
+
+body {
+    margin: 0;
+    width: 100vw;
+  
+    overflow-x: hidden;
+  
+    /**
+      ACA IRIA EL LOADING DE LA FUENTE
+    */
+
+   
+  
+    font-family: "Open Sans", sans-serif;
+
+     /* Gaming Systems */
+
+     
+body {
+    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    color: #484848;
+}
+.seccionJuego{
+    position: relative;
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.interiorAncho{
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ordenInterno{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tituloSistemas{
+        grid-column: 1 / span 2;
+        font-style: inherit;
+        font-size: 1.75rem;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        display: block;
+    }
+.enlacesSistemas{
+ 
+    width: 100%;
+    overflow: hidden;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+.estiloImagen{
+    width: 100%;
+    position: relative;
+}
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.imagen{
+    border-radius: 1rem;
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    text-align: center;
+}
+.texInf{
+    grid-column: 1 / span 2;
+    font-size: 1.3125rem;
+    margin: 1em 0px;
+   display:flex;
+}
+
+.pSistemas{
+    
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.enlace{
+   
+    background-color: rgb(230, 0, 18);
+    border-color: rgb(230, 0, 18);
+    color: white;
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0px 1.5rem;
+    width: auto;
+    position: absolute;
+    margin-left: 50px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 1rem;
+    display: flex;
+    text-decoration: none;
+
+
+}
+
+
+    /* news */
+
+    main{
+        max-width: 60%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 1fr 70px;
+        grid-template-areas:    "titulo"
+                                "contenedor"
+                                "boton";
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    
+    .contenedor{
+        grid-area: contenedor;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:    "P1 P1 P2 P2"
+                                "P3 P4 P5 P6";
+        
+        gap: 1rem;
+        
+    }
+    .boton{
+        padding-top: 10px;
+        grid-area: boton;
+    }
+    div{
+        position: relative;
+    }
+     
+    
+    img{
+        min-height: 1px;
+        width: 100%;
+        border-radius: 5%;
+    }
+    .fecha{
+        border-style: none;
+    }
+    .readMore{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        color: red;
+    }
+    
+    .P1{
+        grid-area: P1;
+    }
+    .P2{
+        grid-area: P2;
+    }
+    .P3{
+        grid-area: P3;
+    }
+    .P4{
+        grid-area: P4;
+    }
+    .P5{
+        grid-area: P5;
+    }
+    .P6{
+        grid-area: P6;
+    }
+    .P1:hover,.P2:hover,.P3:hover,.P4:hover,.P5:hover,.P6:hover{
+        cursor:pointer; 
+        transition: 0.5s; 
+        
+    }
+    .P1:hover h2,.P2:hover h2,.P3:hover h2,.P4:hover h2,.P5:hover h2,.P6:hover h2{
+        color: red;
+        transition: 0.5s;
+        
+    }
+    .P1:hover .imgS,.P2:hover .imgS,.P3:hover .imgS,.P4:hover .imgS,.P5:hover .imgS,.P6:hover .imgS{
+        transition: 0.5s;
+        filter: brightness(0.5);
+        
+    }
+    
+    
+    .enlace{
+        background-color: red;
+        border-color: rgb(230, 0, 18);
+        max-width: 15rem;
+        height: 3rem;
+        width: auto;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    
+    }
+    .enlaceEstilos{
+        color: white;
+        font-size: 1.125rem;
+        padding: 0px 1.5rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    
+    .icon{
+        width: 20px;
+    }
+    @media(max-width:900px){
+        .contenedor{
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:    "P1 P1"
+                                    "P2 P2"
+                                    "P3 P4"
+                                    "P5 P6";
+        }
+    }
+    @media(max-width:550px){
+        main{
+            max-width: 100%;
+        }
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:    "P1"
+                                    "P2"
+                                    "P3"
+                                    "P4"
+                                    "P5"
+                                    "P6";   
+            
+        }
+        
+    }
+    
+    
+  }
+  /*SECCION CHARACTERS */
+  
+  
+  .characters{
+    width: 85%;
+    margin:auto;
+    font-family:  museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(72, 72, 72);
+  font-size: 1.3125rem;
+  font-weight: 700;
+  margin-block: 0px;
+  line-height: 1.4;
+  }
+  
+    .container{
+    display:grid;/*display indica como se va a mostrar el contenido */
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    }
+  
+  
+    .fondo {
+    transition-duration:0.5s;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 100%;
+    box-sizing: border-box;
+    background-size:50px 50px;
+  
+  
+      }
+    .fondo:hover{
+    background-size: cover;
+    transition-duration: 0.5s;
+    }
+  
+    .mainImg {
+    position:relative;
+    bottom: -10px;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    transition-duration:0.5s
+  
+    }
+    .mainImg:hover{
+    transform: scale(1.1,1.1);
+    }
+    .fondo1{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/mario-bg");}
+  
+    .fondo2{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/Character Portals/The Legend of Zelda/1600x1600_background_02");}
+  
+    .fondo3{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/Character Portals/Ncom_CharacterRail_1600x1600_Splatoon_BG");}
+  
+    .fondo4{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/Character Portals/1600x1600_NCOM_Home_Characters_Kirby_BG");}
+  
+    .fondo5{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Background-Pikmin_v02");}
+  
+    .fondo6{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Background-AnimalCrossing");}
+  
+    .fondo7{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Background-Metroid_v01");}
+  
+    .fondo8{background:url("https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,h_300,w_300/dpr_2.0/ncom/en_US/merchandising/CREATIVE-1295-CharacterSection-Background-Pokemon_v01");}
+  
+    @media screen and (max-width:760px) {
+      .container{
+        display:grid;/*display indica como se va a mostrar el contenido */
+        grid-template-columns:1fr 1fr;
+        grid-gap: 20px;
+        }
+    
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+        }
+        section{
+          width: 85%!important;
+        }
+     
+        
+    }
+    /*FINAL SECCION CHARACTERS*/
+  
+    /*Seccion best seller*/
+    .producto{
+      height:auto;
+      width: 100%;
+      margin: 1em;
+      border-radius: 15px;
+      
+      
+    }
+  
+    .contenido{
+      border: 1px solid rgba(49, 41, 41, 0.329);
+      height:311px;
+      width: 268px;
+      margin: 1em;
+      border-radius: 15px;
+  
+  
+    }
+     .producto:hover .imagenBS {
+    transition-duration: 0.5s;
+    transform: translateY(-10px) 
+  
+    }
+    .fotoFeatured{
+      border-radius: 15px 15px 0px 0px;
+    }
+    .contenido:hover .nombreJuego2{
+      color:red
+    }
+    .learn{
+      background-color: blue;
+      width: fit-content;
+      color: white;
+      border-radius: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: -30px;
+      font-weight: 700;
+      font-size: 13px;
+      /*falta ajustar color*/
+    }
+    .available{
+      background-color:red;
+      width: fit-content;
+      color: white;
+      border-radius: 15px;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: -30px;
+      margin-top: 40px;
+      /*falta ajustar color*/
+  
+    }
+  
+  
+    .contenido:hover .fotoFeatured{
+      transition-duration: 0.5s;
+      transform: translateY(-10px);
+      border-radius: 15px 15px 0px 0px;
+      
+  
+    }
+    .producto:hover .nombreJuego {
+      color: red;
+    }
+  
+    .nombreJuego2{
+      font-size: 16px;
+      font-weight: bold;
+     margin: 0px;
+     margin-bottom: 2em;
+    }
+    
+  
+    .contenedor{
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      width: 75%;
+      max-width: 90%;
+      overflow-x:auto ;
+     
+    }
+  
+    .lista{
+      display: flex;
+      flex-direction: row;
+      /*margin: auto;*/
+       overflow-x:auto
+  
+    }
+    .imagenBS{      
+      width:100%;
+      height:auto;
+      border-radius:15px 15px 0px 0px;
+  
+    }
+  
+    .contenido img{      
+      width:100%;
+      height:auto;
+    }
+  
+  
+  
+    .cabecera{
+      display: flex;
+      flex-direction: row;
+    }
+    .separador{
+      color: #bab3b3;
+      font-weight: 100;
+      font-size: 35px;
+      position: relative;
+      top: -20px;
+      margin-left: 8px;
+      margin-right: 8px;
+  
+    }
+    .cabecera h2:nth-of-type(1){
+      font: size 1.125rem;
+      color: rgb(72, 72, 72);
+  
+  
+    }
+    .cabecera h3 a{
+      color: red;
+      font-size: 0.8em;
+      text-decoration: none;
+      position: relative;
+  
+    }
+  
+    .cabecera h3 a:after {
+      content: "";
+      position: absolute;
+      bottom: -2px; 
+      left: 0;
+      width: 100%;
+      height: 2px; 
+      background-color:red;
+    }
+    .producto h3{
+      font-size: 1rem;
+      color: rgb(72, 72, 72);
+  
+    }
+    .producto div p{
+      font-size: 0.75rem;
+      color: rgb(114, 114, 114);
+  
+    }
+    .producto span:nth-of-type(1){
+      color: rgb(72,72,72);
+      font-size: 1rem;
+  
+    }
+    .footer{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      position: relative;
+    }
+    .separador2{
+      color: rgb(230, 0, 18);
+      font-weight: bold;
+  
+    }
+    .footer span{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+   
+
+/* footer */
+
+.footer{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+  }
+  .brandbar{
+      display: grid;
+      width: auto;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2rem;
+      background-color: red;
+      color: white;
+      padding: 2rem 1rem;
+      place-items: center;
+  }
+  .linkbar {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:  "about shop store support parents community"
+                            "about shop store support privacy ..."
+                            "... ... ... ... ... terms";
+      padding: 20px;
+    }
+  
+  .copyright{
+    background-color: black;
+    color: white;
+    display: flex;
+    place-items: center;
+  }
+  
+    .footer__logo {
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .footer__logo:hover{
+      cursor: pointer;
+    }
+  
+    .footer__links {
+      grid-column: span 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+    }
+  
+    .footer__links__category {
+      font-weight: bold;
+      margin-bottom: 10px;
+      border-style: none;
+    }
+    .footer__links__category:hover{
+      cursor: pointer;
+      text-decoration: underline brown;
+    }
+  .about{
+    grid-area: about;
+  }
+  .shop{
+    grid-area: shop;
+  }
+  .store{
+    grid-area: store;
+  }
+  .support{
+    grid-area: support;
+  }
+  .parents{
+    grid-area: parents;
+  }
+  .privacy{
+    grid-area: privacy;
+  }
+  .community{
+    grid-area: community;
+  }
+  .terms{
+    display: flex;
+    justify-content: end;
+    grid-area: terms;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline brown;
+  }
+  .linkbar a{
+    color: red;
+  }
+  .linkbar a:hover{
+    color: brown;
+    text-decoration: underline brown;
+  }
+  .copyright a{
+    color: white;
+  }
+  
+  @media (max-width:900px){
+    .linkbar{
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas:  "about shop store support"
+                            "about shop store support"
+                            "parents community privacy ..."
+                            "... ... ... terms";  
+    }
+    .brandbar{
+      max-height: 180px;
+    }
+  }
+  @media(max-width:550px){
+    .linkbar{
+      grid-template-columns:  1fr;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-areas:  "about"
+                            "shop"
+                            "store"
+                            "support"
+                            "parents"
+                            "community"
+                            "privacy"
+                            "terms";
+      align-items: center;
+      
+    }
+  }
