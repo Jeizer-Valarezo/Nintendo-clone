@@ -1,485 +1,473 @@
-
+body {
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  color: #484848;
+  margin: 0;
+}
 /* Navbar */
 
 * {
-    margin: 0;
-  }
+  margin: 0;
+}
+
+/* .banner{
+  overflow-x: hidden;
+} */
+:root {
+  --color: rgb(72, 72, 72);
+  --rojo: rgb(230, 0, 18);
+}
+
+.logo-search {
+  display: flex;
+  align-items: center;
+}
+header {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: var(--rojo);
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+.logo a{
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+.busqueda{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+}
+
+.busqueda:hover{
+  border-color:var(--rojo);
+  cursor: pointer;
+}
+
+.busqueda select{
+  margin-left: 130px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+}
+.busqueda svg:hover{
+  color: var(--rojo);
+}
+
+.caja {
+  border-style: none;
+}
+
+.dropdown:hover{
+  color:var(--rojo);
+  cursor: pointer;
+  border-color: var(--rojo);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px rgb(218, 218, 218) solid;
+  height: 50px;
+}
+
+.arriba {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+
+
+/* Links de la derecha */
+
+
+.links {
+  display: flex;
+  padding: 10px;
+  justify-self: flex-end;
+  align-items: center;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 550;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.links a {
+  display: flex;
+  color: var(--color);
+  text-decoration: none;
+  padding: 10px;
+  padding-bottom: 5px;
+  margin-top: -8px;
+}
+
+.links a:hover{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.links svg{
+  margin-right: 7px;
+}
+
+.links img{
+  border-radius: 4px;
+  position: relative;
+  bottom: 3px;
+}
+
+
+/* Barra de Navegación inferior */
+
+.cajas {
+  display: flex;
+  align-items: flex-start;
+  border-style: none;
+  border-bottom: 0.5px solid var(--color);
+  border-color: var(--color);
+  margin-left: 10px;
+}
+
+.cajas:hover{
+  border-color:var(--rojo);
+  cursor: pointer;
+}
+
+.dropdown {
+  border-style: none;
+  color: var(--color);
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.dropdown option{
+  color: var(--color);
+}
+
+.segunda div{
+  margin:10px
+}
+
+.segunda form{
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
+  color: var(--color);
+  padding: 4px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+}
+
+.segunda a {
+  text-decoration: none;
+  color: var(--color);
+  padding: 4px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+}
+
+.segunda a:hover{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.segunda select {
+  border-style: none;
+  margin-right: 5px;
+  color: var(--color);
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+}
+
+.segunda select:hover{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.store:hover, .store:hover select{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.games:hover, .games:hover select{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.switch:hover, switch:hover select{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.news:hover, .news:hover select{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+.nintendo:hover, .nintendo:hover select{
+  color:var(--rojo);
+  cursor: pointer;
+}
+
+/* Aquí la parte responsive */
+
+.mobile{
+  display: none;
+  z-index: 1;
+}
+
+.top{
+  display: none;
+}
+
+@media(max-width: 1025px) {
+  header{
+   display:none;
+   }
   
-  /* .banner{
-    overflow-x: hidden;
-  } */
-  :root {
-    --color: rgb(72, 72, 72);
-    --rojo: rgb(230, 0, 18);
-  }
-  
-  .logo-search {
+   .top{
     display: flex;
-    align-items: center;
-  }
-  header {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: center;
-    background-color: var(--rojo);
+    align-items: center;
+    background-color:var(--rojo);
+    height:46px;
+    padding-left: 8px;
+   }
+
+  .top svg{
     color: white;
-    width: 100px;
-    height: 50px;
-  }
-
-  .logo a{
-    color:white;
     display: flex;
-    justify-content: center;
-  }
-  
-  .logo:hover{
-    cursor: pointer;
-  }
-  .busqueda{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 700;
-  }
-
-  .busqueda:hover{
-    border-color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .busqueda select{
-    margin-left: 130px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 700;
-  }
-  .busqueda svg:hover{
-    color: var(--rojo);
-  }
-
-  .caja {
-    border-style: none;
-  }
-
-  .dropdown:hover{
-    color:var(--rojo);
-    cursor: pointer;
-    border-color: var(--rojo);
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    border-bottom: 1px rgb(218, 218, 218) solid;
-    height: 50px;
-  }
-  
-  .arriba {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 4px;
-  }
-  
-
-  /* Links de la derecha */
-
-
-  .links {
-    display: flex;
-    padding: 10px;
-    justify-self: flex-end;
-    align-items: center;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 550;
-    font-size: 14px;
+    margin-left: 9px;
+  } 
+  .topflag{
     margin-right: 10px;
+    border-color: white;
   }
-  
-  .links a {
-    display: flex;
-    color: var(--color);
-    text-decoration: none;
-    padding: 10px;
-    padding-bottom: 5px;
-    margin-top: -8px;
-  }
-
-  .links a:hover{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .links svg{
-    margin-right: 7px;
-  }
-
-  .links img{
-    border-radius: 4px;
-    position: relative;
-    bottom: 3px;
-  }
-
-  
-  /* Barra de Navegación inferior */
-  
-  .cajas {
-    display: flex;
-    align-items: flex-start;
-    border-style: none;
-    border-bottom: 0.5px solid var(--color);
-    border-color: var(--color);
-    margin-left: 10px;
-  }
-
-  .cajas:hover{
-    border-color:var(--rojo);
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    border-style: none;
-    color: var(--color);
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-  }
-
-  .dropdown option{
-    color: var(--color);
-  }
-  
-  .segunda div{
-    margin:10px
-  }
-
-  .segunda form{
-    padding-top: 35px;
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: center; 
-    color: var(--color);
-    padding: 4px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 700;
-  }
-  
-  .segunda a {
-    text-decoration: none;
-    color: var(--color);
-    padding: 4px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 700;
-  }
-  
-  .segunda a:hover{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .segunda select {
-    border-style: none;
-    margin-right: 5px;
-    color: var(--color);
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 700;
-  }
-
-  .segunda select:hover{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .store:hover, .store:hover select{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .games:hover, .games:hover select{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .switch:hover, switch:hover select{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .news:hover, .news:hover select{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  .nintendo:hover, .nintendo:hover select{
-    color:var(--rojo);
-    cursor: pointer;
-  }
-
-  /* Aquí la parte responsive */
-
   .mobile{
-    display: none;
-    z-index: 1;
+    position: fixed;
+    left:10%;
+    bottom: 0;
+    margin-bottom: 20px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+    -webkit-box-align:center;
+    width: 400px;
   }
-
-  .top{
-    display: none;
+  
+  .mobile:hover{
+    cursor: pointer;
   }
+  .mobile div{
+    padding:20px;
+    }
 
-  @media(max-width: 1025px) {
-    header{
-     display:none;
-     }
-    
-     .top{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color:var(--rojo);
-      height:46px;
-      padding-left: 8px;
-     }
-
-    .top svg{
-      color: white;
-      display: flex;
-      margin-left: 9px;
-    } 
-    .topflag{
-      margin-right: 10px;
-      border-color: white;
-    }
-    .mobile{
-      position: fixed;
-      left:10%;
-      bottom: 0;
-      margin-bottom: 20px;
-      height: 58px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      background-color: rgb(255, 255, 255);
-      border-radius: 100px;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
-      -webkit-box-align:center;
-      width: 400px;
-    }
-    
-    .mobile:hover{
-      cursor: pointer;
-    }
-    .mobile div{
-      padding:20px;
-      }
-
-    
-    .mobile div a{
-      color:var(--color)
-    }
-    .like :hover, .burger :hover, .carro :hover, .login :hover{
-      color:var(--rojo);
-    }
-    .search{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 0px;
-      background-color: var(--rojo);
-      border-radius: 100px;
-      color:white;
-      position: relative;
-      bottom: 10px;
-      width:18px;
-      height: 18px;
-    }
-    .search svg{
-      color: white;
-    }  
+  
+  .mobile div a{
+    color:var(--color)
   }
+  .like :hover, .burger :hover, .carro :hover, .login :hover{
+    color:var(--rojo);
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    background-color: var(--rojo);
+    border-radius: 100px;
+    color:white;
+    position: relative;
+    bottom: 10px;
+    width:18px;
+    height: 18px;
+  }
+  .search svg{
+    color: white;
+  }  
+}
 
-  /* Aquí empiezo el banner */
+/* Aquí empiezo el banner */
+
+.image_resp{
+  display: none;
+}
+
+.containerPreview{
+  position: relative;
+}
+
+.containerBackground{
+  background-image: url(background.jpg);
+  position: absolute;
+  height: 460px;
+  width: 100%;
+ }
+
+.containerImage{
+  position:relative; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.containerImage img{
+  border-radius: 15px;
+  position: relative;
+  top: 30px;
+}
+
+.piedefoto{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.titulo{
+  margin-top: 75px;
+  color: rgb(72, 72, 72);
+  font-size:26.5px;
+  font-weight:700;
+  margin-left: 41px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  height: min-content;
+  margin-right: 20px;  
+}
+
+.titulo:hover{
+  cursor: default;
+}
+
+.deals{
+  position: relative;
+  top: 10px;
+}
+
+.boton {
+  background-color: var(--rojo);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 47px;
+}
+
+.boton:hover{
+  cursor: pointer;
+}
+
+.rating{
+  position: absolute;
+  right: 0%;
+}
+
+.rating img{
+  width: 103px;
+  bottom: 49px;
+  margin-right: 39px;
+  position: relative;
+  top:23px;
+}
+
+/* Parte responsive del banner */
+
+@media(max-width: 1025px) {
 
   .image_resp{
-    display: none;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    /* height: auto; 
+    width: 100%; */
+  }
+
+  .image_resp img{
+    width: 100%;
+    margin-right: 0%;
   }
 
   .containerPreview{
     position: relative;
   }
-
-  .containerBackground{
-    background-image: url(background.jpg);
-    position: absolute;
-    height: 460px;
-    width: 100%;
-   }
-
-  .containerImage{
-    position:relative; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
+  .containerImage img{
+    display: none;
   }
 
-  .containerImage img{
-    border-radius: 15px;
-    position: relative;
-    top: 30px;
+  .containerBackground{
+    position: absolute;
+    margin-top:200px;
+    /* max-width: 100%; */
   }
 
   .piedefoto{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-
-  .titulo{
-    margin-top: 75px;
-    color: rgb(72, 72, 72);
-    font-size:26.5px;
-    font-weight:700;
-    margin-left: 41px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    height: min-content;
-    margin-right: 20px;  
-  }
-
-  .titulo:hover{
-    cursor: default;
-  }
-
-  .deals{
     position: relative;
-    top: 10px;
-  }
-
-  .boton {
-    background-color: var(--rojo);
-    color: white;
-    border: none;
-    border-radius: 12px;
-    padding-left: 22px;
-    padding-right: 22px;
-    font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    height: 47px;
-  }
-
-  .boton:hover{
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .rating{
-    position: absolute;
-    right: 0%;
+    display: none;
   }
 
-  .rating img{
-    width: 103px;
-    bottom: 49px;
-    margin-right: 39px;
+  .titulo{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .boton{
     position: relative;
-    top:23px;
+    width:520px;
+    top: 7px;
+    border-radius: 0.5rem;
   }
+}
 
-  /* Parte responsive del banner */
 
-  @media(max-width: 1025px) {
-
-    .image_resp{
-      max-width: 100%;
-      position: relative;
-      display: flex;
-      /* height: auto; 
-      width: 100%; */
-    }
-
-    .image_resp img{
-      width: 100%;
-      margin-right: 0%;
-    }
-
-    .containerPreview{
-      position: relative;
-    }
-    .containerImage img{
-      display: none;
-    }
-
-    .containerBackground{
-      position: absolute;
-      margin-top:200px;
-      /* max-width: 100%; */
-    }
-
-    .piedefoto{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-    }
-
-    .rating{
-      display: none;
-    }
-
-    .titulo{
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .boton{
-      position: relative;
-      width:520px;
-      top: 7px;
-      border-radius: 0.5rem;
-    }
-  }
-
-body {
-    margin: 0;
-    width: 100vw;
-  
-    overflow-x: hidden;
-  
-    /**
-      ACA IRIA EL LOADING DE LA FUENTE
-    */
-
-   
-  
-    font-family: "Open Sans", sans-serif;
 
      /* Gaming Systems */
-}
+
      
-body {
-  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.4;
-    -webkit-font-smoothing: antialiased;
-    color: #484848;
-    
-}
+
 .seccionJuego{
     position: relative;
     width: 100%;
@@ -577,6 +565,7 @@ body {
 
 
     /* news */
+
     main{
       max-width: 60%;
       margin: 0 auto;
@@ -983,130 +972,130 @@ body {
 /* footer */
 
 .footer{
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+.brandbar{
     display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    width: auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    background-color: red;
+    color: white;
+    padding: 2rem 1rem;
+    place-items: center;
+}
+.linkbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:  "about shop store support parents community"
+                          "about shop store support privacy ..."
+                          "... ... ... ... ... terms";
+    padding: 20px;
+  }
+
+.copyright{
+  background-color: black;
+  color: white;
+  display: flex;
+  place-items: center;
+}
+
+  .footer__logo {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__logo:hover{
+    cursor: pointer;
+  }
+
+  .footer__links {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .footer__links__category {
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-style: none;
+  }
+  .footer__links__category:hover{
+    cursor: pointer;
+    text-decoration: underline brown;
+  }
+.about{
+  grid-area: about;
+}
+.shop{
+  grid-area: shop;
+}
+.store{
+  grid-area: store;
+}
+.support{
+  grid-area: support;
+}
+.parents{
+  grid-area: parents;
+}
+.privacy{
+  grid-area: privacy;
+}
+.community{
+  grid-area: community;
+}
+.terms{
+  display: flex;
+  justify-content: end;
+  grid-area: terms;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline brown;
+}
+.linkbar a{
+  color: red;
+}
+.linkbar a:hover{
+  color: brown;
+  text-decoration: underline brown;
+}
+.copyright a{
+  color: white;
+}
+
+@media (max-width:900px){
+  .linkbar{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:  "about shop store support"
+                          "about shop store support"
+                          "parents community privacy ..."
+                          "... ... ... terms";  
   }
   .brandbar{
-      display: grid;
-      width: auto;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 2rem;
-      background-color: red;
-      color: white;
-      padding: 2rem 1rem;
-      place-items: center;
+    max-height: 180px;
   }
-  .linkbar {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-areas:  "about shop store support parents community"
-                            "about shop store support privacy ..."
-                            "... ... ... ... ... terms";
-      padding: 20px;
-    }
-  
-  .copyright{
-    background-color: black;
-    color: white;
-    display: flex;
-    place-items: center;
+}
+@media(max-width:550px){
+  .linkbar{
+    grid-template-columns:  1fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:  "about"
+                          "shop"
+                          "store"
+                          "support"
+                          "parents"
+                          "community"
+                          "privacy"
+                          "terms";
+    align-items: center;
+    
   }
-  
-    .footer__logo {
-      grid-column: span 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .footer__logo:hover{
-      cursor: pointer;
-    }
-  
-    .footer__links {
-      grid-column: span 1;
-      display: flex;
-      flex-direction: column;
-      margin-left: 20px;
-    }
-  
-    .footer__links__category {
-      font-weight: bold;
-      margin-bottom: 10px;
-      border-style: none;
-    }
-    .footer__links__category:hover{
-      cursor: pointer;
-      text-decoration: underline brown;
-    }
-  .about{
-    grid-area: about;
-  }
-  .shop{
-    grid-area: shop;
-  }
-  .store{
-    grid-area: store;
-  }
-  .support{
-    grid-area: support;
-  }
-  .parents{
-    grid-area: parents;
-  }
-  .privacy{
-    grid-area: privacy;
-  }
-  .community{
-    grid-area: community;
-  }
-  .terms{
-    display: flex;
-    justify-content: end;
-    grid-area: terms;
-  }
-  a{
-    text-decoration: none;
-  }
-  a:hover{
-    text-decoration: underline brown;
-  }
-  .linkbar a{
-    color: red;
-  }
-  .linkbar a:hover{
-    color: brown;
-    text-decoration: underline brown;
-  }
-  .copyright a{
-    color: white;
-  }
-  
-  @media (max-width:900px){
-    .linkbar{
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-areas:  "about shop store support"
-                            "about shop store support"
-                            "parents community privacy ..."
-                            "... ... ... terms";  
-    }
-    .brandbar{
-      max-height: 180px;
-    }
-  }
-  @media(max-width:550px){
-    .linkbar{
-      grid-template-columns:  1fr;
-      grid-template-rows: repeat(8, 1fr);
-      grid-template-areas:  "about"
-                            "shop"
-                            "store"
-                            "support"
-                            "parents"
-                            "community"
-                            "privacy"
-                            "terms";
-      align-items: center;
-      
-    }
-  }
+}
